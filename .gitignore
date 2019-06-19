@@ -1,0 +1,5 @@
+# .gitignore for the leetcode repo
+
+# Mac DS_Store
+.DS_Store
+.DS_Store?
