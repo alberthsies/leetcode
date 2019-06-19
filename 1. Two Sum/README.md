@@ -22,22 +22,22 @@ There are totally three steps for this solution.
 
 1. Check the boundary
 
-...Check the boundary to prevent vectors less than two elements.
+Check the boundary to prevent vectors less than two elements.
 
-...However, this is an `Easy` level problem, the boundary check isn't that necessary though.
+However, this is an `Easy` level problem, the boundary check isn't that necessary though.
 
 2. Create a hash map
 
-...Creating a hash map using `unordered_multimap` provided by `C++ STL`. The reason for using an `ubordered_multimap` instead of an `unordered_map` is because there might be cases having duplicate values.
+Creating a hash map using `unordered_multimap` provided by `C++ STL`. The reason for using an `ubordered_multimap` instead of an `unordered_map` is because there might be cases having duplicate values.
 
-...The map will use the value as `key` and use the index as `value`.
+The map will use the value as `key` and use the index as `value`.
 
-...This should take `O(n)` time complexity and `O(n)` space complexity.
+This should take `O(n)` time complexity and `O(n)` space complexity.
 
 3. Check the hash map 
 
-...Since we already got the hash map, we can check the remain (target - num in `nums`) in `O(1)` time complexity.
+Since we already got the hash map, we can check the remain (target - num in `nums`) in `O(1)` time complexity.
 
-...Thus went through the Vector's items one by one will return us the answer within `O(n)` time complexity.
+Thus went through the Vector's items one by one will return us the answer within `O(n)` time complexity.
 
-...Note that we will have to check for the duplicate numbers before returning the numbers.
+:exclamation: Note that we will have to check for the duplicate numbers before returning the numbers.
