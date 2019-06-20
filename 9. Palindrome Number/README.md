@@ -1,4 +1,4 @@
-# 7. Palindrome Number
+# 9. Palindrome Number
 `Easy`
 
 | # | File name          | Language | Time complexity | Space complexity | 
